@@ -13,9 +13,9 @@
                     <p class="mt-5 text-base font-normal text-center text-gray-400 lg:text-lg lg:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis debitis deleniti explicabo deserunt. Numquam reprehenderit ratione voluptas adipisci eos minus nam quod ipsam perspiciatis beatae libero, in quidem aliquam odio?</p>
                </div>
 
-               {{-- <div class="max-w-md">
+               <div class="max-w-md">
                     <img class="object-cover w-full h-full" src="{{ url('images/hero.png') }}" alt="Hero">
-               </div> --}}
+               </div>
           </div>
 
           <div class="py-40">
