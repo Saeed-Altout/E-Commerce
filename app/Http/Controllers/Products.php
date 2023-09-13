@@ -13,6 +13,11 @@ class Products extends Controller
             'email'=>'saeedaltoutpro@gmail.com',
         ];
 
-        return response()->json($fakeData);
+        if (count($fakeData)>0) {
+            return response()->json($fakeData);
+        }
+
+        return '';
+
         }
 }
