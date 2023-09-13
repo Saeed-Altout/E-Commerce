@@ -23,9 +23,7 @@
                     <li><a class="font-semibold text-gray-400 duration-300 ease-in-out hover:text-white" href="{{ route('home.index') }}">Home</a></li>
                     <li><a class="font-semibold text-gray-400 duration-300 ease-in-out hover:text-white" href="{{ route('home.about') }}">About</a></li>
                     <li><a class="font-semibold text-gray-400 duration-300 ease-in-out hover:text-white" href="{{ route('computers.index') }}">Computers</a></li>
-                    <li><a class="font-semibold text-gray-400 duration-300 ease-in-out hover:text-white" href="{{ route('home.products') }}">Products</a></li>
                     <li><a class="font-semibold text-gray-400 duration-300 ease-in-out hover:text-white" href="{{ route('computers.create') }}">Create</a></li>
-                    <li><a class="font-semibold text-gray-400 duration-300 ease-in-out hover:text-white" href="{{ route('home.cart') }}">Cart</a></li>
                     <li><a class="font-semibold text-gray-400 duration-300 ease-in-out hover:text-white" href="{{ route('home.contact') }}">Contact</a></li>
                </ul>
                <button class="block text-white lg:hidden w-fit" id="toggle">
@@ -37,8 +35,6 @@
                     <li><a class="font-semibold text-gray-400 duration-300 ease-in-out hover:text-white" href="{{ route('computers.index') }}">Computers</a></li>
                     <li><a class="font-semibold text-gray-400 duration-300 ease-in-out hover:text-white" href="{{ route('computers.create') }}">Create</a></li>
                     <li><a class="font-semibold text-gray-400 duration-300 ease-in-out hover:text-white" href="{{ route('home.contact') }}">Contact</a></li>
-                    {{-- <li><a class="font-semibold text-gray-400 duration-300 ease-in-out hover:text-white" href="{{ route('home.products') }}">Products</a></li> --}}
-                    {{-- <li><a class="font-semibold text-gray-400 duration-300 ease-in-out hover:text-white" href="{{ route('home.cart') }}">Cart</a></li> --}}
                </ul>
           </nav>
      </header>

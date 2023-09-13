@@ -15,16 +15,4 @@ class StaticController extends Controller
     public function contact() {
         return view("contact");
     }
-    public function products() {
-        return view("products");
-    }
-    public function create() {
-        return view("create");
-    }
-    public function cart() {
-        return view("cart");
-    }
-    public function product() {
-        return view("product");
-    }
 }
