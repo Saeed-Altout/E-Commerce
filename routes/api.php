@@ -3,9 +3,9 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\Products;
+// use App\Http\Controllers\Products;
 
-Route::get('/data',[Products::class,'index']);
+// Route::get('/data',[Products::class,'index']);
 /*
 |--------------------------------------------------------------------------
 | API Routes
