@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StaticController;
-use App\Http\Controllers\ComputersController;
+use App\Http\Controllers\ProductsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,7 +15,6 @@ use App\Http\Controllers\ComputersController;
 */
 
 Route::get('/', [StaticController::class,"index"])->name('home.index');
-Route::get('/about', [StaticController::class,"about"])->name('home.about');
-Route::get('/contact', [StaticController::class,"contact"])->name('home.contact');
 
-Route::resource('computers', ComputersController::class);
+
+Route::resource('products',ProductsController::class);

@@ -18,23 +18,17 @@
 <body class="bg-zinc-950">
      <header class="bg-zinc-900 h-[76px] fixed w-full top-0 z-50">
           <nav class="container flex items-center justify-between px-10 py-6 mx-auto">
-               <a class="font-semibold text-white" href="{{ route('home.index') }}">E-Commerce</a>
-               <ul class="items-center justify-between hidden gap-10 list-none lg:flex">
+               <a class="font-semibold text-white " href="{{ route('home.index') }}">E-Commerce</a>
+               <ul class="items-center justify-between hidden gap-10 list-none md:flex">
                     <li><a class="font-semibold text-gray-400 duration-300 ease-in-out hover:text-white" href="{{ route('home.index') }}">Home</a></li>
-                    <li><a class="font-semibold text-gray-400 duration-300 ease-in-out hover:text-white" href="{{ route('home.about') }}">About</a></li>
-                    <li><a class="font-semibold text-gray-400 duration-300 ease-in-out hover:text-white" href="{{ route('computers.index') }}">Computers</a></li>
-                    <li><a class="font-semibold text-gray-400 duration-300 ease-in-out hover:text-white" href="{{ route('computers.create') }}">Create</a></li>
-                    <li><a class="font-semibold text-gray-400 duration-300 ease-in-out hover:text-white" href="{{ route('home.contact') }}">Contact</a></li>
+                    <li><a class="font-semibold text-gray-400 duration-300 ease-in-out hover:text-white" href="{{ route('products.index') }}">Products</a></li>
                </ul>
-               <button class="block text-white lg:hidden w-fit" id="toggle">
+               <button class="block text-white md:hidden w-fit" id="toggle">
                     <img src="{{ url('images/menu.svg') }}" alt="menu">
                </button>
-               <ul id="menuMobile" class="absolute duration-300 ease-in-out right-0 translate-x-[100%]  h-screen transition-transform top-[75px] bg-zinc-900 w-72 p-10 flex flex-col items-center justify-start gap-10 list-none lg:hidden">
+               <ul id="menuMobile" class="absolute duration-300 ease-in-out right-0 translate-x-[100%]  h-screen transition-transform top-[75px] bg-zinc-900 w-72 p-10 flex flex-col items-center justify-start gap-10 list-none md:hidden">
                     <li><a class="font-semibold text-gray-400 duration-300 ease-in-out hover:text-white" href="{{ route('home.index') }}">Home</a></li>
-                    <li><a class="font-semibold text-gray-400 duration-300 ease-in-out hover:text-white" href="{{ route('home.about') }}">About</a></li>
-                    <li><a class="font-semibold text-gray-400 duration-300 ease-in-out hover:text-white" href="{{ route('computers.index') }}">Computers</a></li>
-                    <li><a class="font-semibold text-gray-400 duration-300 ease-in-out hover:text-white" href="{{ route('computers.create') }}">Create</a></li>
-                    <li><a class="font-semibold text-gray-400 duration-300 ease-in-out hover:text-white" href="{{ route('home.contact') }}">Contact</a></li>
+                    <li><a class="font-semibold text-gray-400 duration-300 ease-in-out hover:text-white" href="{{ route('products.index') }}">Products</a></li>
                </ul>
           </nav>
      </header>
