@@ -12,4 +12,7 @@ class StaticController extends Controller
     public function cart() {
         return view("cart");
     }
+    public function auth() {
+        return view("auth");
+    }
 }
