@@ -1,11 +1,6 @@
 {
     "version": 2,
     "framework": "vite",
-    "functions": {
-        "api/index.php": {
-            "runtime": "vercel-php@0.6.0"
-        }
-    },
     "builds": [
         {
             "src": "/api/index.php",
