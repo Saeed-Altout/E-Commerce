@@ -15,6 +15,7 @@ use App\Http\Controllers\ProductsController;
 */
 
 Route::get('/', [StaticController::class,"index"])->name('home.index');
+Route::get('/about', [StaticController::class,"about"])->name('about.index');
 Route::get('/cart', [StaticController::class,"cart"])->name('cart.index');
 Route::get('/auth', [StaticController::class,"auth"])->name('auth.index');
 
