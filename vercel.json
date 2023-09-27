@@ -1,5 +1,11 @@
 {
     "version": 2,
+    "framework": "null",
+    "functions": {
+        "api/index.php": {
+            "runtime": "vercel-php@0.6.0"
+        }
+    },
     "builds": [
         {
             "src": "/api/index.php",
@@ -8,17 +14,6 @@
         {
             "src": "/public/**",
             "use": "@vercel/static"
-        },
-        {
-            "source": "/feedback/((?!general).*)",
-            "destination": "/api/feedback/general"
-        },
-        {
-            "functions": {
-                "api/users/**/*.js": {
-                    "maxDuration": 30
-                }
-            }
         }
     ],
     "routes": [
@@ -41,5 +36,7 @@
         "CACHE_DRIVER": "array",
         "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "cookie"
-    }
+    },
+    "source": "/feedback/((?!general).*)",
+    "destination": "/api/feedback/general"
 }
