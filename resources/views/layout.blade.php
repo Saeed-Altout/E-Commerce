@@ -21,6 +21,7 @@
                <a class="font-semibold text-white " href="{{ route('home.index') }}">E-Commerce</a>
                <ul class="items-center justify-between hidden gap-10 list-none md:flex">
                     <li><a class="font-semibold text-gray-400 duration-300 ease-in-out hover:text-white" href="{{ route('home.index') }}">Home</a></li>
+                    <li><a class="font-semibold text-gray-400 duration-300 ease-in-out hover:text-white" href="{{ route('cart.index') }}">Cart</a></li>
                     <li><a class="font-semibold text-gray-400 duration-300 ease-in-out hover:text-white" href="{{ route('products.index') }}">Products</a></li>
                </ul>
                <button class="block text-white md:hidden w-fit" id="toggle">
@@ -28,6 +29,7 @@
                </button>
                <ul id="menuMobile" class="absolute duration-300 ease-in-out right-0 translate-x-[100%]  h-screen transition-transform top-[75px] bg-zinc-900 w-72 p-10 flex flex-col items-center justify-start gap-10 list-none md:hidden">
                     <li><a class="font-semibold text-gray-400 duration-300 ease-in-out hover:text-white" href="{{ route('home.index') }}">Home</a></li>
+                    <li><a class="font-semibold text-gray-400 duration-300 ease-in-out hover:text-white" href="{{ route('cart.index') }}">Cart</a></li>
                     <li><a class="font-semibold text-gray-400 duration-300 ease-in-out hover:text-white" href="{{ route('products.index') }}">Products</a></li>
                </ul>
           </nav>
