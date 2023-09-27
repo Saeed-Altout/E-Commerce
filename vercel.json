@@ -36,7 +36,5 @@
         "CACHE_DRIVER": "array",
         "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "cookie"
-    },
-    "source": "/feedback/((?!general).*)",
-    "destination": "/api/feedback/general"
+    }
 }
