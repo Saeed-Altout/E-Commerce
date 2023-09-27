@@ -23,7 +23,7 @@
                                    <img src="{{ url('images/feature_prod_01.jpg') }}" alt="product-01" class="w-full h-full max-h-32 object-contain">
                               </td>
 
-                              <td class="pc-3">
+                              <td class="pc-3 text-left">
                                    <p class="line-clamp-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel mollitia iure impedit aspernatur optio culpa, nobis consectetur?</p>
                               </td>
                               <td class="px-3">
@@ -50,7 +50,7 @@
                               </td>
 
                               <td class="pc-3">
-                                   <p class="line-clamp-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel mollitia iure.</p>
+                                   <p class="line-clamp-1 text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel mollitia iure.</p>
                               </td>
                               <td class="px-3">
                                    <button class="bg-red-500 text-white px-2 py-0.5 hover:bg-red-600 duration-200 ease-linear rounded-lg">
