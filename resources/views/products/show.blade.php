@@ -14,11 +14,7 @@
                          <p class="w-full tracking-wider text-gray-300">
                               {{ $product->description }}
                          </p>
-                         <form action="{{ route('products.destroy', $product->id) }}" method="POST">
-                              @csrf
-                              @method('DELETE')
-                              <button class="block px-4 py-1 mt-10 ml-auto font-semibold text-white duration-300 ease-in-out bg-red-500 rounded-lg w-fit hover:bg-red-600">Delete</button>
-                         </form>
+
                     </div>
                </div>
           </div>

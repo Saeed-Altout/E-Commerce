@@ -1,12 +1,15 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\Auth;
+use App\Models\selected_item;
 use Illuminate\Http\Request;
 use App\Models\Product;
 
 class ProductsController extends Controller
 {
+
+
     /**
      * Display a listing of the resource.
      */
@@ -35,7 +38,7 @@ class ProductsController extends Controller
         $product->description = $request->input('product-description');
         $product->price = $request->input('product-price');
         $product->imgUrl = $request->input('product-imgUrl');
-    
+
         $product->save();
 
         return  redirect()->route('products.index',$request);
@@ -71,7 +74,7 @@ class ProductsController extends Controller
         $product->description = $request->input('product-description');
         $product->price = $request->input('product-price');
         $product->imgUrl = $request->input('product-imgUrl');
-    
+
         $product->save();
 
         return  redirect()->route('products.index',$request);
@@ -83,9 +86,23 @@ class ProductsController extends Controller
     public function destroy($id)
     {
         $product = Product::findOrFail($id);
-    
+
         $product->delete();
 
         return  redirect()->route('products.index',$id);
+    }
+
+
+    public function cart()
+    {
+        $user = auth()->user();
+       $selected_item = new selected_item();
+        $selected_item->name ='product-name';
+        $selected_item->user_id = $user->getAuthIdentifier();
+        $selected_item->save();
+
+        return view('cart',[
+           'selectedItems'=>selected_item::all()
+        ]);
     }
 }

@@ -34,11 +34,17 @@
                </ul>
 
                <div class="ml-4 text-white relative">
-                    <p id="profile-name" class="font-semibold text-white duration-300 ease-in-out hover:underline cursor-pointer">Saeed Altout</p>
+                    <p id="profile-name" class="font-semibold text-white duration-300 ease-in-out hover:underline cursor-pointer"> {{ Auth::user()->name }}</p>
                     <div id="btn-logout" class="absolute top-10 bg-zinc-900 px-5 py-10 right-0 rounded-lg">
-                         <button class="hover:underline font-semibold duration-200 ease-linear ">
-                              Logout
-                         </button>
+                        <a class="dropdown-item" href="{{ route('logout') }}"
+                           onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                            {{ __('Logout') }}
+                        </a>
+
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                            @csrf
+                        </form>
                     </div>
                </div>
           </nav>
