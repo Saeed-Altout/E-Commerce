@@ -14,10 +14,13 @@
                          <p class="w-full tracking-wider text-gray-300">
                               {{ $product->description }}
                          </p>
-
                     </div>
+                    <a href="">
+                         <button class="block px-4 py-2 my-5 ml-auto font-semibold text-white duration-300 ease-in-out bg-green-400 rounded-lg w-fit">Buy</button>
+                    </a>
                </div>
           </div>
+
           <a href="{{ route('products.index') }}">
                <button class="block px-4 py-2 my-5 ml-auto text-black duration-300 ease-in-out bg-white rounded-lg w-fit">Back</button>
           </a>

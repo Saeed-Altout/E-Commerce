@@ -19,7 +19,7 @@
      <header class="bg-zinc-900 h-[76px] fixed w-full top-0 z-50">
           <nav class="container flex items-center justify-between px-10 py-6 mx-auto">
                <a class="font-semibold text-white " href="{{ route('home.index') }}">E-Commerce</a>
-               <ul class="items-center justify-between hidden gap-10 list-none md:flex ml-auto">
+               <ul class="items-center justify-between hidden gap-10 ml-auto list-none md:flex">
                     <li><a class="font-semibold text-gray-400 duration-300 ease-in-out hover:text-white" href="{{ route('about.index') }}">About</a></li>
                     <li><a class="font-semibold text-gray-400 duration-300 ease-in-out hover:text-white" href="{{ route('cart.index') }}">Cart</a></li>
                     <li><a class="font-semibold text-gray-400 duration-300 ease-in-out hover:text-white" href="{{ route('products.index') }}">Products</a></li>
@@ -33,18 +33,17 @@
                     <li><a class="font-semibold text-gray-400 duration-300 ease-in-out hover:text-white" href="{{ route('products.index') }}">Products</a></li>
                </ul>
 
-               <div class="ml-4 text-white relative">
-                    <p id="profile-name" class="font-semibold text-white duration-300 ease-in-out hover:underline cursor-pointer"> {{ Auth::user()->name }}</p>
-                    <div id="btn-logout" class="absolute top-10 bg-zinc-900 px-5 py-10 right-0 rounded-lg">
-                        <a class="dropdown-item" href="{{ route('logout') }}"
-                           onclick="event.preventDefault();
+               <div class="relative ml-4 text-white">
+                    <p id="profile-name" class="font-semibold text-white duration-300 ease-in-out cursor-pointer hover:underline"> {{ Auth::user()->name }}</p>
+                    <div id="btn-logout" class="absolute right-0 px-5 py-10 rounded-lg top-10 bg-zinc-900">
+                         <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                            {{ __('Logout') }}
-                        </a>
+                              {{ __('Logout') }}
+                         </a>
 
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                            @csrf
-                        </form>
+                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                              @csrf
+                         </form>
                     </div>
                </div>
           </nav>
@@ -53,13 +52,13 @@
 
 
 
-     <main class="w-full overflow-x-hidden min-h-screen">
+     <main class="w-full min-h-screen overflow-x-hidden">
           @yield('content')
      </main>
 
 
 
-     <footer class=" bg-zinc-900 w-full py-5 text-white text-center">
+     <footer class="w-full py-5 text-center text-white bg-zinc-900">
           <p>&copy; 2023 <strong>E-Commerce</strong> All Right Reseirve.</p>
      </footer>
 
