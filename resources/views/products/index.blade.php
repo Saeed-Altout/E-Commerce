@@ -24,9 +24,11 @@
                                    </p>
                                    <a href="{{ route('products.show', $product->id) }}" class="w-full tracking-wider text-red-500">See More</a>
                               </div>
+
                               <a href="{{ route('products.edit', $product->id) }}">
                                    <button class="block px-6 py-2 mt-10 ml-auto text-white duration-300 ease-in-out rounded-lg bg-sky-500 hover:bg-sky-600 w-fit">Edit</button>
                               </a>
+
                          </div>
                     </div>
                @endforeach
@@ -35,7 +37,7 @@
 @endsection
 
 
-{{-- 
+{{--
 <div class="mt-10 bg-zinc-900">
      <table class="w-full">
           <thead class="w-full text-left border-b-[1px] bg-zinc-950 border-b-zinc-500">
@@ -76,7 +78,7 @@
 
 </div> --}} --}}
 
-{{-- 
+{{--
 <form action="{{ route('products.destroy', $product->id) }}" method="POST">
      @csrf
      @method('DELETE')

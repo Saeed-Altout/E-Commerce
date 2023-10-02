@@ -21,18 +21,3 @@
 @endsection
 
 
-
-{{-- <div class="overflow-hidden duration-300 ease-in-out rounded-lg shadow-lg hover:scale-105 bg-zinc-900">
-     <img src="{{ url('images/product_single_01.jpg') }}" alt="product-01" class="object-cover w-full h-[300px]">
-     <div class="p-8 leading-8">
-          <div class="flex items-center justify-between">
-               <h4 class="text-2xl font-semibold tracking-wider text-white">Product</h4>
-               <span class="font-normal text-gray-300">24$</span>
-          </div>
-          <p class="w-full tracking-wider text-gray-300">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, odit!
-               <a href="/products/product-01" class="text-red-400">...More</a>
-          </p>
-          <button class="block px-4 py-1 mt-10 ml-auto font-semibold bg-white rounded-lg w-fit">Buy Now</button>
-     </div>
-</div> --}}
